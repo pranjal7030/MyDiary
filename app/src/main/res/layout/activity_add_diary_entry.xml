@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image7"
+    tools:context="jain.pranjal.mydiary.AddDiaryEntry">
+
+
+    <ImageView
+        android:id="@+id/imageViewCal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/calander"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextBody" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Select Date"
+        android:textStyle="italic"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/imageViewCal"
+        android:layout_alignStart="@+id/textViewError" />
+
+    <TextView
+        android:id="@+id/textViewSalutation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dear Diary ,"
+        android:textStyle="italic"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/textViewError"
+        android:layout_alignStart="@+id/editTextBody" />
+
+    <EditText
+        android:id="@+id/editTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewSalutation"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Body"
+        android:background="@drawable/edit_text_top"
+        android:padding="15sp"
+        android:visibility="visible"
+        android:layout_alignEnd="@+id/buttonSave" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:text="Save"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@+id/textViewDate"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDate"
+        android:textColor="#ff0000"
+        android:layout_alignStart="@+id/textViewSalutation" />
+</RelativeLayout>

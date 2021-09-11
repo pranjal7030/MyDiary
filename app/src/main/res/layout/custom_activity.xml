@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageViewList"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="39dp"
+        android:background="#000000"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/mydiary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FF781B3B"
+        android:layout_marginLeft="63dp"
+        android:layout_below="@+id/imageViewList"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF781B3B"
+        android:text="Click Here To Open"
+        android:layout_below="@+id/textViewList"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
